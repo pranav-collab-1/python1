@@ -1,0 +1,6 @@
+p = float(input("Enter Principle Value:"))
+r = float(input("Enter Rate:"))
+t = float(input("Enter Time value:"))
+SimpleInterest = float((p*r*t)/100)
+TotalAmount = float(p + SimpleInterest)
+print(f"The Interest is {SimpleInterest} and Amount is {TotalAmount}")

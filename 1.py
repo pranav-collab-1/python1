@@ -1,0 +1,13 @@
+name = input("Enter Name:")
+registration = input("Enter Registration Number:")
+age =int(input("Enter age:"))
+department = input("Enter Department:")
+university = input("Enter Name of University:")
+city = input("Enter City:")
+print("\n----- PERSONAL DETAILS -----")
+
+print(f" name of the student is {name} and Roll No:{registration}")
+print(f" He is {age} years old")
+print(f" Department of {department} ")
+print(f" Name of University: {university} ")
+print(f" He is from {city} ")
