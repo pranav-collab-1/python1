@@ -1,0 +1,23 @@
+import numpy as np
+from cvxopt import matrix,solvers
+##A = matrix(3,(4,2))
+##print(A)
+##B = matrix([2,6,-4,9,1,0],(2,3))
+##print(B)
+##C = matrix(range(10,20),(2,5))
+##print(C)
+##D = matrix([[10,20],[30,40]])
+##print(D)
+##a = np.array([[10,20],[30,40]])
+##b = matrix(a)
+##print(b)
+A = matrix([-1,-1,0,1,1,-1,-1,-2],(4,2))
+a = matrix([[-1,-1,0,1],[1,-1,-1,-2]],tc='d')
+b = matrix([1,-2,0,4],tc='d')
+c = matrix([2,1],tc='d')
+print(b)
+print(a)
+print(c)
+sol = solvers.lp(c,a,b)
+print(sol['x'])
+

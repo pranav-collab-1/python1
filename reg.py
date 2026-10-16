@@ -24,6 +24,7 @@ def show_balance(balance):
     print(f"Your current balance: {balance}")
 
 
+
 def is_valid_amount(amount, balance):
     if amount <= 0:
         print("Invalid amount")
